@@ -7,11 +7,17 @@
     "test": "test"
   },
   "scripts": {
-    "test": "node --test test/**/*.test.js",
-    "start": "fastify start -l info app.js",
+    "coverage": "nyc npm test",
+    "coverage_report": "nyc report --reporter=html",
+    "coverage_report_text": "nyc report --reporter=text",
+    "coverage_report_json": "nyc report --reporter=json",
+    "coverage_report_lcov": "nyc report --reporter=lcov",
+    "coverage_report_html": "nyc report --reporter=ntml",
     "dev": "fastify start -w -l info -P app.js",
     "lint": "biome lint .",
-    "lint_fix": "biiome lint --write ./**/*.js"
+    "lint_fix": "biiome lint --write ./**/*.js",
+    "start": "fastify start -l info app.js",
+    "test": "node --test test/**/*.test.js"
   },
   "keywords": [
     "gyros",
@@ -27,6 +33,7 @@
     "fastify-plugin": "^5.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4"
+    "@biomejs/biome": "^1.9.4",
+    "nyc": "^17.1.0"
   }
 }
