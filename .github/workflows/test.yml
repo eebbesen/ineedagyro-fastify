@@ -2,10 +2,6 @@ name: Test and Lint
 
 on:
   push:
-<<<<<<< HEAD
-  pull_request:
-=======
->>>>>>> main
   workflow_dispatch:
 
 jobs:
@@ -37,5 +33,5 @@ jobs:
       - name: Upload coverage reports
         uses: actions/upload-artifact@v4
         with:
-            name: coverage-report
-            path: coverage/
+          name: coverage-report
+          path: coverage/

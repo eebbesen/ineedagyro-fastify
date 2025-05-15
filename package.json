@@ -10,7 +10,7 @@
     "coverage": "nyc npm test",
     "dev": "fastify start -w -l info -P app.js",
     "lint": "biome lint .",
-    "lint_fix": "biiome lint --write ./**/*.js",
+    "lint_fix": "biome lint --write ./**/*.js",
     "start": "fastify start -l info app.js",
     "test": "node --test test/**/*.test.js"
   },

@@ -1,15 +1,6 @@
 {
   "all": true,
-  "include": [
-    "routes/**/*.js",
-    "plugins/**/*.js"
-  ],
-  "exclude": [
-    "test/**/*.js"
-  ],
-  "reporter": [
-    "lcov",
-    "text",
-    "text-summary"
-  ]
+  "include": ["routes/**/*.js", "plugins/**/*.js"],
+  "exclude": ["test/**/*.js"],
+  "reporter": ["lcov", "text", "text-summary"]
 }
